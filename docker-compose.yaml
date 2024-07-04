@@ -1,0 +1,9 @@
+services:
+  gcc:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ../hello:/workspace/hello
+    tty: true
+    stdin_open: true
