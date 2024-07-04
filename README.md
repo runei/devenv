@@ -1,4 +1,3 @@
-```markdown
 # GCC Development Environment
 
 This project sets up a GCC-based development environment using Docker. The environment includes essential tools like `cmake`, `gdb`, and `git`, and allows for interactive development inside a Docker container.
@@ -99,4 +98,3 @@ The `_bash_history` file is created if it does not exist to ensure command histo
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-```
