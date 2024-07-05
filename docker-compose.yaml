@@ -4,6 +4,6 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - ../hello:/workspace/hello
+      - ../roc-toolkit:/workspace/roc-toolkit
     tty: true
     stdin_open: true
