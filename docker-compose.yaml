@@ -5,6 +5,7 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./_bash_history:/root/.bash_history
-      - ../roc-toolkit:/roc-toolkit
+      - ../roc-toolkit:/workspace/roc-toolkit
+      - ../http_server:/workspace/http_server
     tty: true
     stdin_open: true
