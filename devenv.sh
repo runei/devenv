@@ -31,7 +31,11 @@ start_container() {
 run_container() {
     if is_container_running; then
         echo "Environment already running - connecting..."
-        winpty docker exec -it "$CONTAINER_NAME" bash
+        if command -v winpty >/dev/null 2>&1; then
+            winpty docker exec -it "$CONTAINER_NAME" bash
+        else
+            docker exec -it "$CONTAINER_NAME" bash
+        fi
     else
         echo "Container is not running. Please start the container first."
     fi
